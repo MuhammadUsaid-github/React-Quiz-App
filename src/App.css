@@ -1,213 +1,59 @@
-/* Reset default margin and padding */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Navbar styles */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  transition: background-color 0.3s;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-/* ... (other styles) */
-
-/* Overlay text styles */
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.application {
   text-align: center;
-  color: white;
-  z-index: 1; /* Place the text above the background image */
+  margin-top: 100px;
 }
 
-.overlay h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+.question-section {
+  background-color: #004253;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 380px;
+  height: 330px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.overlay p {
+.question-count {
   font-size: 18px;
-}
-
-/* ... (other styles) */
-
-/* Background image styles */
-.background-image {
-  background-image: url("./bg-home.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  z-index: -1;
-  overflow: hidden; /* Ensure overlay doesn't overflow */
-}
-
-/* Add a purple overlay */
-.background-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(128, 0, 128, 0.5); /* Purple color with transparency */
-}
-
-/* Other styles for your content */
-.desig::before {
-  content: "•";
-  color: red;
-}
-.background {
-  background-image: url("./online-world.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 43vh;
-  width: 100%;
-  position: relative;
-  z-index: -1;
-  overflow: hidden; /* Ensure overlay doesn't overflow */
-}
-
-/* Add a purple overlay */
-.background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(128, 0, 128, 0.5); /* Purple color with transparency */
-}
-.pricing-cards-container {
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for the container */
-  padding: 20px;
-  /* background-color: #f5f5f5; */
-}
-
-.pricing-card {
-  width: 300px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for each card */
-  text-align: center;
-}
-
-.pricing-card h2 {
-  font-size: 24px;
   margin-bottom: 10px;
 }
 
-.pricing-card p {
-  font-size: 16px;
-  color: #888;
-  margin-bottom: 15px;
-}
-
-.price {
-  display: block;
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.pricing-button {
-  background-color: #fb3e3e;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.get-in-touch-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px;
-}
-
-.addresses {
-  flex: 1;
-}
-
-.addresses h2 {
-  font-size: 24px;
-}
-
-.addresses address {
-  margin: 20px 0;
-  font-style: normal;
-  color: #888;
-}
-
-.contact-form {
-  flex: 1;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
+.question-text {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-form {
-  display: grid;
-  grid-gap: 10px;
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
+.option-button {
+  background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 5px 7px 6px;
+  /* width: 100px; */
+  /* height: 50px; */
 }
 
-/* button {
-  background-color: purple;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-} */
-.touch-btn {
-  background-color: #fb3e3e;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+.option-button:hover {
+  background-color: #36bc91;
+}
+
+.score-section {
+  font-size: 30px;
+  background-color: #36bc91;
+  border-radius: 50px;
+
+}
+
+.score-section:hover{
+  color: #000853;
 }
